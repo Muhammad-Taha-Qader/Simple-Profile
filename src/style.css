@@ -8,7 +8,7 @@ html{
 
 #myNav{
     /* box-shadow: inset 4em 3em 40px -30px rgb(121, 24, 138); */
-    box-shadow: inset 4em 3em 40px -30px rgb(171, 55, 192);
+    box-shadow: inset 4em 3em 40px -30px rgb(59, 105, 220);
     /* box-shadow: inset 4em 3em 40px -30px rgb(88, 17, 101); */
     @apply flex justify-between bg-slate-900/40 border-2 border-slate-50 mx-5 rounded-2xl py-3 mt-3
     text-gray-100 font-poppins-medium md:font-poppins-semibold text-base md:text-xl;
