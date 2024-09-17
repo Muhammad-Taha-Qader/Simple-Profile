@@ -11,11 +11,11 @@ html{
 
 #myNav{
     /* box-shadow: inset 4em 3em 40px -30px rgb(121, 24, 138); */
-    box-shadow: inset 4em 3em 40px -30px rgb(59, 105, 220);
+    box-shadow: inset 4em 3em 40px -30px rgb(4, 16, 67);
     /* box-shadow: inset 4em 3em 40px -30px rgb(88, 17, 101); */
     /* @apply flex justify-between bg-slate-900/40 border-2 border-slate-50 mx-5 rounded-2xl py-3 mt-3 */
-    @apply flex justify-between bg-slate-900/30 border-2 border-slate-50 mx-5 rounded-2xl py-3 mt-3
-    text-gray-100 font-poppins-medium md:font-poppins-semibold text-base md:text-xl;
+    @apply flex justify-between bg-slate-900/30 border-2 border-slate-50 mx-5 rounded-2xl py-3 lg:py-4 mt-3
+    text-gray-100 font-poppins-medium md:font-poppins-semibold text-sm sm:text-base lg:text-xl;
     /* bg-slate-800 */
 }
 
@@ -48,15 +48,16 @@ html{
 } */
 #bg-video {
     position: absolute;
-    top: -5px; /* Move video up by 5px to crop the top */
-    top: 20%;
-    left: 75%;
+    top: -55px; /* Move video up by 5px to crop the top */
+    /* top: 20%; */
+    @apply top-[20%] left-[75%] md:left-[85%] md:min-w-full md:min-h-full;
+    /* left: 95%; */
     min-width: 70%;
     min-height: 70%;
     width: auto;
     height: auto;
     z-index: -1;
-    transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-50deg);
     object-fit: cover; /* Ensures the video covers the entire area */
     border: none;
 }

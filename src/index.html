@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="output.css">
+    <!-- for lottie animation after link run : npm install lottie-web -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
     <!-- <nav class="bg-gray-700">
@@ -22,11 +24,13 @@
     </div>
 
     <nav id="myNav">
-        <p class="ml-4 md:ml-6"><'Hi There'></p> 
-        <div class="mr-4 text-base">  
-            <button type="button" class=" justify-self-end rounded-lg ml-4 hover:text-red-500 transition duration-300 ease-in-out"><i class="fa-solid fa-broom"></i></button>
-            <a href="./about.html" ><button type="button" class="ml-4 underline underline-offset-2 hover:text-yellow-300 transition duration-300 ease-in-out"><i class="fa-solid fa-circle-info"></i></button></a>
-            <a href="./help.html" ><button type="button" class=" ml-4 underline underline-offset-2 hover:text-yellow-300 transition duration-300 ease-in-out"><i class="fa-solid fa-handshake-angle"></i></button></a>  
+        <p class="ml-6 mt-1 sm:mt-0" >Muhammad Taha</p> 
+        <div class="mr-4 text-base lg:text-xl">  
+            <a href="./about.html" ><button type="button" class="ml-3 underline underline-offset-2 hover:text-purple-500  transition duration-300 ease-in-out"><i class="fa-solid fa-circle-info"></i></button></a>
+            <a href="./education.html" ><button type="button" class="ml-3 underline underline-offset-2 hover:text-purple-500  transition duration-300 ease-in-out"><i class=" fa-solid fa-graduation-cap"></i></button></a>
+            <a href="./projects.html" ><button type="button" class="ml-3 underline underline-offset-2 hover:text-purple-500  transition duration-300 ease-in-out"><i class=" fa-solid fa-laptop-code"></i></button></a>
+            <a href="./experience.html" ><button type="button" class="ml-3 underline underline-offset-2 hover:text-purple-500  transition duration-300 ease-in-out"> <i class=" fa-solid fa-briefcase"></i></button></a>
+            <a href="./skills.html" ><button type="button" class="ml-3 underline underline-offset-2 hover:text-purple-500  transition duration-300 ease-in-out"><i class=" fa-solid fa-user-gear"></i></button></a>
         </div>
     </nav>
     <header class="pt-28 mx-12">
@@ -39,59 +43,71 @@
             <span class="text-gray-900">Muhammad</span>
             <span class="text-indigo-900 font-poppins-extrabold">Taha</span>
         </h1>
-        <p>
+        <!-- <p>
             +92 307-1475727 | <a href="mailto:bscs21076@itu.edu.pk">bscs21076@itu.edu.pk</a><br>
-            <!-- <a href="https://linkedin.com/in/Muhammad-taha-07a1a0228">LinkedIn</a> | 
-            <a href="https://github.com/Muhammad-Taha-Qader">GitHub</a> -->
-            <div class="text-gray-900 space-x-3 text-4xl mt-2">
-                <a href="https://www.linkedin.com/in/Muhammad-taha-07a1a0228" class="hover:text-yellow-300 transition duration-300 ease-in-out"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Muhammad-Taha-Qader" class="hover:text-yellow-300 transition duration-300 ease-in-out"><i class="fa-brands fa-github"></i></a>
+            <div class="text-gray-900 space-x-3 text-2xl mt-2">
+                <a href="https://www.linkedin.com/in/Muhammad-taha-07a1a0228" class="hover:text-purple-500  transition duration-300 ease-in-out"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Muhammad-Taha-Qader" class="hover:text-purple-500  transition duration-300 ease-in-out"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:bscs21076@itu.edu.pk" class="hover:text-purple-500  transition duration-300 ease-in-out"><i class="fa-solid fa-envelope"></i></a>
+                <a href="+92 307-1475727" class="hover:text-purple-500  transition duration-300 ease-in-out"><i class="fa-solid fa-phone"></i></a>
             </div>
-        </p>
+        </p> -->
+        <div class=" w-80 sm:w-96 md:w-[650px] mt-9 mb-20 text-indigo-900">
+            <p >
+                "I find the most joy in tackling intricate problems by exploding my mind in thoughtful thinking it's where the real magic happens."
+                <span class="float-right clear-both"><br /> ~Taha</span>
+            </p>
+        </div>
+          
     </header>
 
 
 
-    <div class="container px-6 my-10 md:px-14">
+    <div class="container px-6 mt-28 mb-10 md:px-14">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Education Card -->
-            <a href="education.html" class="block p-6 rounded-lg shadow-lg bg-gradient-to-r from-purple-400 to-purple-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+            <!-- <a href="education.html" class="relative block p-6 rounded-lg rounded-tr-none shadow-lg bg-gradient-to-r from-purple-400 to-purple-600 text-gray-100 hover:shadow-2xl transition duration-300 ease-in-out"> -->
+                <a href="education.html" class="relative block p-6 rounded-lg rounded-tr-none shadow-lg bg-gradient-to-r from-purple-400 to-purple-600  text-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
+                <!-- Top Border Element -->
+                <!-- <div class="absolute -z-10 -top-2 right-0 w-3/4 h-10 border-t-[16px] border-violet-800"></div> -->
+                
                 <div class="flex items-center mb-4">
-                    <!-- <img src="https://img.icons8.com/material-rounded/24/000000/school.png" class="mr-4" alt="Education Icon"> -->
                     <i class="text-2xl fa-solid fa-graduation-cap"></i>
                     <h2 class="pl-2 text-2xl font-bold">Education</h2>
                 </div>
-                <p>Explore your educational journey.</p>
+                <p class="text-gray-100">Explore educational journey.</p>
             </a>
+            
 
             <!-- Projects Card -->
-            <a href="projects.html" class="block p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+            <a href="projects.html" class="block p-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-400 to-blue-600 text-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
+
                 <div class="flex items-center mb-4">
                     <!-- <img src="https://img.icons8.com/material-rounded/24/000000/code.png" class="mr-4" alt="Projects Icon"> -->
                     <i class="text-2xl fa-solid fa-laptop-code"></i>
                     <h2 class="pl-2 text-2xl font-bold">Projects</h2>
                 </div>
-                <p>See all of your past projects.</p>
+                <p>See all past projects.</p>
             </a>
 
             <!-- Experience Card -->
-            <a href="experience.html" class="block p-6 rounded-lg shadow-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+            <a href="experience.html" class="block p-6 rounded-lg shadow-lg bg-gradient-to-r from-orange-400 to-orange-600 text-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
                 <div class="flex items-center mb-4">
                     <!-- <img src="https://img.icons8.com/material-rounded/24/000000/briefcase.png" class="mr-4" alt="Experience Icon"> -->
                     <i class="text-2xl fa-solid fa-briefcase"></i>
                     <h2 class="pl-2 text-2xl font-bold">Experience</h2>
                 </div>
-                <p>Discover your professional experience.</p>
+                <p>Discover professional experience.</p>
             </a>
 
             <!-- Skills Card -->
-            <a href="skills.html" class="block p-6 rounded-lg shadow-lg bg-gradient-to-r from-red-400 to-red-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+            <a href="skills.html" class="block p-6 rounded-lg shadow-lg bg-gradient-to-r from-red-400 to-red-600 text-gray-100 hover:shadow-2xl transition duration-300 ease-in-out">
                 <div class="flex items-center mb-4">
                     <!-- <img src="https://img.icons8.com/material-rounded/24/000000/skills.png" class="mr-4" alt="Skills Icon"> -->
                     <i class="text-2xl fa-solid fa-user-gear"></i>
                     <h2 class="pl-2 text-2xl font-bold">Skills</h2>
                 </div>
-                <p>Review your technical skills.</p>
+                <p>Review technical skills.</p>
             </a>
         </div>
 
@@ -107,18 +123,64 @@
     <img src="https://ghchart.rshb.dev/Muhammad-Taha-Qader" alt="GitHub Contributions Graph">
     <img src="https://github-readme-stats.vercel.app/api?username=Muhammad-Taha-Qader&show_icons=true&hide_title=true&hide=prs,issues&count_private=true" alt="GitHub Stats">
     <img src="https://github-contribution-stats.vercel.app/api/?username=Muhammad-Taha-Qader" alt="GitHub Contribution Stats"> -->
+   
+
+
+   
+    <section class="flex items-center mt-32">
+
+        <!-- Lottie Animation -->
+        <lottie-player 
+            src="../img/GitHub.json" 
+            background="transparent"  
+            speed="1"  
+            loop autoplay
+            class="self-start -ml-16 mb-4 w-[250px] h-[250px] md:w-[400px] md:h-[400px]   ">
+        </lottie-player>
+        <div class="flex-grow justify-center flex flex-col">
+            <img src="../img/git.png" alt="GitHub" class="h-16 w-44 mb-6 self-center"/>
+            <div class="flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 md:px-3 lg:justify-center md:gap-x-2 lg:items-start">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=Muhammad-Taha-Qader" alt="Contribution Streak">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Muhammad-Taha-Qader" alt="Top Languages">
+            </div>
+        </div>
+
+    </section>
+    <!-- Contact -->
+    <section class="flex justify-between items-center w-full">
+        <!-- Contact Icons -->
+         <div class="flex justify-center flex-grow flex-col -mb-20">
+            <h2 class="text-center text-xl md:text-4xl font-poppins-semibold mb-6">Contact</h2>
+            <div class="flex justify-center text-gray-900 space-x-6 md:space-x-11 text-2xl md:text-4xl mt-2 ">
+                <a href="https://www.linkedin.com/in/Muhammad-taha-07a1a0228" class="hover:text-purple-500 transition duration-300 ease-in-out"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Muhammad-Taha-Qader" class="hover:text-purple-500 transition duration-300 ease-in-out"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:bscs21076@itu.edu.pk" class="hover:text-purple-500 transition duration-300 ease-in-out"><i class="fa-solid fa-envelope"></i></a>
+                <a href="+92 307-1475727" class="hover:text-purple-500 transition duration-300 ease-in-out"><i class="fa-solid fa-phone"></i></a>
+            
+            </div>
+            <p class="mt-4 font-poppins-extrathin text-xs sm:text-sm text-center">&copy; 2024 Twilight Sols. All rights reserved.</p>
+    
+         </div>
 
     
-    <img src="https://github-readme-stats.vercel.app/api?username=Muhammad-Taha-Qader" alt="GitHub Stats">
-`   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Muhammad-Taha-Qader" alt="Contribution Streak">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Muhammad-Taha-Qader" alt="Top Languages">
-    <img src="https://github-readme-activity-graph.cyclic.app/graph?username=Muhammad-Taha-Qader" alt="Activity Graph">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Muhammad-Taha-Qader&layout=compact" alt="Top Languages">
-    <img src="https://github-profile-trophy.vercel.app/?username=Muhammad-Taha-Qader" alt="Profile Trophy">
+        <!-- Lottie Animation -->
+        <lottie-player 
+            src="../img/contact3.json" 
+            background="transparent"  
+            speed="1"  
+            loop autoplay
+            class="self-end w-[250px] h-[250px] md:w-[400px] md:h-[400px] right-0 bottom-0 mr-4 -mb-10">
+        </lottie-player>
+    </section>
+    
 
-    <img src="https://ghchart.rshb.dev/Muhammad-Taha-Qader" alt="GitHub Contributions Graph">
-    <img src="https://github-readme-stats.vercel.app/api?username=Muhammad-Taha-Qader&show_icons=true&hide_title=true&hide=prs,issues&count_private=true" alt="GitHub Stats">
-    <img src="https://github-contribution-stats.vercel.app/api/?username=Muhammad-Taha-Qader" alt="GitHub Contribution Stats">
-
+    
+    <!-- <footer class="text-gray-900 text-center pt-12 pb-4 font-poppins-light">
+        <div class="space-x-4 pb-3 text-center">
+            <a href="./index.html" ><button type="button" class="underline underline-offset-2 hover:text-purple-500  transition duration-300 ease-in-out">Home</button></a>
+            <a href="./about.html" ><button type="button" class="underline underline-offset-2 hover:text-purple-500  transition duration-300 ease-in-out">About</button></a>
+        </div>
+        <p class="font-poppins-extrathin text-sm text-center">&copy; 2024 Twilight Sols. All rights reserved.</p>
+    </footer> -->
 </body>
 </html>

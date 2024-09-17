@@ -6,22 +6,45 @@
     <title>Experience & Certifications</title>
     <link href="../src/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <!-- for lottie animation after link run : npm install lottie-web -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
     <nav id="myNav">
-        <p class="ml-4"><'Muhammad Taha/'></p> 
-        <div class="mr-4 text-base">  
-            <a href="../src/index.html" ><button type="button" class="underline underline-offset-2 hover:text-yellow-300 transition duration-300 ease-in-out"><i class="fa-solid fa-house"></i></button></a>
-            <a href="./about.html" ><button type="button" class="ml-4 underline underline-offset-2 hover:text-yellow-300 transition duration-300 ease-in-out"><i class="fa-solid fa-circle-info"></i></button></a>
+        <p class="ml-6">Muhammad Taha</p> 
+        <div class="mr-4 text-base lg:text-xl">  
+            <a href="./index.html" ><button type="button" class="underline underline-offset-2 hover:text-purple-500 transition duration-300 ease-in-out"><i class="fa-solid fa-house"></i></button></a>
+            <a href="./about.html" ><button type="button" class="ml-3 underline underline-offset-2 hover:text-purple-500 transition duration-300 ease-in-out"><i class="fa-solid fa-circle-info"></i></button></a>
+            <a href="./education.html" ><button type="button" class="ml-3 underline underline-offset-2 hover:text-purple-500 transition duration-300 ease-in-out"><i class=" fa-solid fa-graduation-cap"></i></button></a>
+            <a href="./projects.html" ><button type="button" class="ml-3 underline underline-offset-2 hover:text-purple-500 transition duration-300 ease-in-out"><i class=" fa-solid fa-laptop-code"></i></button></a>
+            <a href="./skills.html" ><button type="button" class="ml-3 underline underline-offset-2 hover:text-purple-500 transition duration-300 ease-in-out"><i class="fa-solid fa-user-gear"></i></button></a>
         </div>
     </nav>
 
     <div class="container mx-auto p-6">
+
+        
+        <!-- Lottie Animation -->
+        <lottie-player 
+            src="../img/exper.json" 
+            background="transparent"  
+            speed="1"  
+            loop autoplay
+            class="absolute top-[60px] -z-10 -left-20 mb-4 w-[250px] h-[250px] md:w-[400px] md:h-[400px]  lg:w-[500px] lg:h-[500] md:top-1 ">
+        </lottie-player>
+
         <!-- Experience Section -->
-        <section>
-            <h1 class="text-4xl font-bold text-gray-800 mb-8">Professional Experience</h1>
+        <section class="lg:px-48">
+            <h1 class="text-4xl font-poppins-thin text-wrap text-center
+                relative w-[max-content] font-mono
+                before:absolute before:inset-0 before:animate-typewriter
+                before:bg-gray-100
+                after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
+                after:bg-violet-500
+                mx-auto my-16">
+                <span class="text-indigo-900 font-poppins-extrabold">Experience</span>
+            </h1>
         <!-- DeltaLabs Full-Stack Web Internship -->
         <div class="bg-gradient-to-r from-orange-400 to-orange-600 text-white rounded-lg shadow-lg p-6 mb-6">
             <div class="flex items-center mb-4">
@@ -78,7 +101,7 @@
             <!-- Technical Manager at Seed Programming -->
             <div class="bg-gradient-to-r from-purple-400 to-purple-600 text-white rounded-lg shadow-lg p-6 mb-6">
                 <div class="flex items-center mb-4">
-                    <img src="https://www.seedprogramming.org/wp-content/uploads/2023/02/Logo-5-removebg-preview.png" alt="Seed Programming Logo" class="w-16 h-16 mr-4">
+                    <img src="../img/Sp png logo.jpg" alt="Seed Programming Logo" class="w-16 h-16 mr-4 rounded-full">
                     <div>
                         <h2 class="text-2xl font-bold">Technical Manager at Seed Programming</h2>
                         <p>Jan. 2023 - Present</p>
@@ -98,7 +121,7 @@
         </section>
 
         <!-- Certifications Section -->
-        <section>
+        <section class="lg:px-48">
             <h1 class="text-4xl font-bold text-gray-800 mt-12 mb-8">Certifications</h1>
 
             <!-- Machine Learning Specialization -->
@@ -138,19 +161,33 @@
                     <div>
                         <h2 class="text-2xl font-bold">Become a Software Developer</h2>
                         <p>LinkedIn Learning | 2021-2022</p>
-                        <a href="https://www.linkedin.com/learning/certificates/d11930d9fa28825b4e4239118e15197847d37e0b53d3c217521017ba9888a2af?trk=backfilled_certificate" class="text-blue-200 hover:underline">View Certificate</a>
+                        <a href="https://www.linkedin.com/learning/certificates/d11930d9fa28825b4e4239118e15197847d37e0b53d3c217521017ba9888a2af?trk=backfilled_certificate" 
+                        class="text-blue-200 hover:underline">
+                            View Certificate
+                        </a>
                     </div>
                 </div>
-                <p class="text-white">
-                    Completed a comprehensive course covering programming fundamentals, databases, and web security. 
+                <p class="text-white mb-4">
+                    Joined LinkedIn Learning’s "Become a Software Developer" course to explore various dimensions of the computer field and 
+                    earned an industry-standard certificate. This learning path provides a broad perspective on core technologies for web 
+                    development, software development, and databases.
                 </p>
-                <ul class="text-white">
-                    <li>• Programming Foundations: Fundamentals</li>
-                    <li>• Programming Foundations: Databases</li>
-                    <li>• Succeeding in Web Development: Full Stack and Front End</li>
-                    <li>• HTML, CSS, Python, Java, C#, SQL Programming</li>
+                <a href="https://drive.google.com/file/d/140-X692jKghamiPsdffHlYrHxfYIZKoK/view"><p class="text-white mb-4">Certificate | Pdf</p></a>
+                <p class="text-white mb-4">Sub-Courses covered <a class="underline" href="https://drive.google.com/drive/folders/1-6smATx27SLz4Ox8vsxwkM1Ee40eWeO4">(all certified):</a> </p>
+                <ul class="list-disc list-inside text-white">
+                    <li>Programming Foundations: Fundamentals</li>
+                    <li>Programming Foundations: Databases</li>
+                    <li>Succeeding in Web Development: Full Stack and Front End</li>
+                    <li>HTML Essential Training</li>
+                    <li>CSS Essential Training</li>
+                    <li>Learning Python</li>
+                    <li>Learning Java</li>
+                    <li>Learning C#</li>
+                    <li>Learning SQL Programming</li>
+                    <li>Programming Foundations: Web Security</li>
                 </ul>
             </div>
+
 
             <!-- Code Yourself! -->
             <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-lg shadow-lg p-6 mb-6">
@@ -159,7 +196,7 @@
                     <div>
                         <h2 class="text-2xl font-bold">Code Yourself! An Introduction to Programming</h2>
                         <p>University of Edinburgh | 2020</p>
-                        <a href="https://coursera.org/share/252a86805dff951dc1fb02fd377dc2f6" class="text-blue-200 hover:underline">Certification</a>
+                        <a href="https://drive.google.com/file/d/1r1l8cqxv-PXyfCfRqzbDGdQJwGHop_G2/view?usp=sharing" class="text-blue-200 hover:underline">Certification</a>
                     </div>
                 </div>
                 <p class="text-white">
@@ -170,10 +207,10 @@
     </div>
     <footer class="text-gray-900 text-center pt-12 pb-4 font-poppins-light">
         <div class="space-x-4 pb-3 text-center">
-            <a href="./index.html" ><button type="button" class="underline underline-offset-2 hover:text-yellow-300 transition duration-300 ease-in-out">Home</button></a>
-            <a href="./about.html" ><button type="button" class="underline underline-offset-2 hover:text-yellow-300 transition duration-300 ease-in-out">About</button></a>
+            <a href="./index.html" ><button type="button" class="underline underline-offset-2 hover:text-purple-500 transition duration-300 ease-in-out">Home</button></a>
+            <a href="./about.html" ><button type="button" class="underline underline-offset-2 hover:text-purple-500 transition duration-300 ease-in-out">About</button></a>
         </div>
-    <p class="font-poppins-thin text-sm text-center">&copy; 2024 Twilight Sols. All rights reserved.</p>
+    <p class="font-poppins-extrathin text-sm text-center">&copy; 2024 Twilight Sols. All rights reserved.</p>
 </footer>
 </body>
 </html>
