@@ -3,5 +3,80 @@
 @tailwind utilities;
 
 html{
-    @apply bg-slate-950 text-slate-50 ;
+    @apply  text-slate-900 ;
 }
+
+#myNav{
+    /* box-shadow: inset 4em 3em 40px -30px rgb(121, 24, 138); */
+    box-shadow: inset 4em 3em 40px -30px rgb(171, 55, 192);
+    /* box-shadow: inset 4em 3em 40px -30px rgb(88, 17, 101); */
+    @apply flex justify-between bg-slate-900/40 border-2 border-slate-50 mx-5 rounded-2xl py-3 mt-3
+    text-gray-100 font-poppins-medium md:font-poppins-semibold text-base md:text-xl;
+    /* bg-slate-800 */
+}
+
+/* --------------- For BG video */
+/* Ensures the video covers the entire viewport */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Ensures the video stays in the background */
+    height: calc(100vh - 10px); /* Cropping 5px from both top and bottom */
+    border: none;
+
+}
+
+/* #bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensures the video covers the entire area 
+} */
+#bg-video {
+    position: absolute;
+    top: -5px; /* Move video up by 5px to crop the top */
+    top: 20%;
+    left: 75%;
+    min-width: 70%;
+    min-height: 70%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    object-fit: cover; /* Ensures the video covers the entire area */
+    border: none;
+}
+
+
+/* Optional: Dark overlay on the video for better text readability */
+/* .video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); Adjust opacity as needed */
+    /* @apply bg-gradient-to-l from-black; 
+    z-index: 0;
+    border: none;
+
+} */
+
+/* Ensures content appears on top of the video */
+body {
+    position: relative;
+    z-index: 1;
+    /* color: white; Adjust content text color for better readability */
+}
+/* --------------- */

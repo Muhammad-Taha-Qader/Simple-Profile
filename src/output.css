@@ -554,14 +554,344 @@ video {
   --tw-contain-style:  ;
 }
 
+.relative {
+  position: relative;
+}
+
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.w-\[max-content\] {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-html {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(248 250 252 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-indigo-900 {
+  --tw-text-opacity: 1;
+  color: rgb(49 46 129 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.font-poppins-thin {
+  font-family: Poppins, sans-serif;
+  font-weight: 100;
+}
+
+.font-poppins-extrabold {
+  font-family: Poppins, sans-serif;
+  font-weight: 800;
+}
+
+html {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+#myNav{
+  /* box-shadow: inset 4em 3em 40px -30px rgb(121, 24, 138); */
+  box-shadow: inset 4em 3em 40px -30px rgb(171, 55, 192);
+  /* box-shadow: inset 4em 3em 40px -30px rgb(88, 17, 101); */
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(248 250 252 / var(--tw-border-opacity));
+  background-color: rgb(15 23 42 / 0.4);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  #myNav {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+  }
+}
+
+#myNav{
+  /* bg-slate-800 */
+}
+
+/* --------------- For BG video */
+
+/* Ensures the video covers the entire viewport */
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  /* Ensures the video stays in the background */
+  height: calc(100vh - 10px);
+  /* Cropping 5px from both top and bottom */
+  border: none;
+}
+
+/* #bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensures the video covers the entire area 
+} */
+
+#bg-video {
+  position: absolute;
+  top: -5px;
+  /* Move video up by 5px to crop the top */
+  top: 20%;
+  left: 75%;
+  min-width: 70%;
+  min-height: 70%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Ensures the video covers the entire area */
+  border: none;
+}
+
+/* Optional: Dark overlay on the video for better text readability */
+
+/* .video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); Adjust opacity as needed */
+
+/* @apply bg-gradient-to-l from-black; 
+    z-index: 0;
+    border: none;
+
+} */
+
+/* Ensures content appears on top of the video */
+
+body {
+  position: relative;
+  z-index: 1;
+  /* color: white; Adjust content text color for better readability */
+}
+
+/* --------------- */
+
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:inset-0::before {
+  content: var(--tw-content);
+  inset: 0px;
+}
+
+@keyframes typewriter {
+  to {
+    content: var(--tw-content);
+    left: 100%;
+  }
+}
+
+.before\:animate-typewriter::before {
+  content: var(--tw-content);
+  animation: typewriter 2s steps(11) forwards;
+}
+
+.before\:bg-gray-950::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+}
+
+.after\:absolute::after {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:inset-0::after {
+  content: var(--tw-content);
+  inset: 0px;
+}
+
+.after\:w-\[0\.125em\]::after {
+  content: var(--tw-content);
+  width: 0.125em;
+}
+
+@keyframes typewriter {
+  to {
+    content: var(--tw-content);
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    content: var(--tw-content);
+    opacity: 0;
+  }
+
+  0.1% {
+    content: var(--tw-content);
+    opacity: 1;
+  }
+
+  50% {
+    content: var(--tw-content);
+    opacity: 1;
+  }
+
+  50.1% {
+    content: var(--tw-content);
+    opacity: 0;
+  }
+
+  100% {
+    content: var(--tw-content);
+    opacity: 0;
+  }
+}
+
+.after\:animate-caret::after {
+  content: var(--tw-content);
+  animation: typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s;
+}
+
+.after\:bg-violet-500::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 92 246 / var(--tw-bg-opacity));
+}
+
+.hover\:text-red-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.hover\:text-yellow-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:ml-6 {
+    margin-left: 1.5rem;
+  }
 }

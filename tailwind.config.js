@@ -1,8 +1,151 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ['./src/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      fontWeight: {
+        thin: 100,
+        extralight: 200,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+        black: 900,
+      },
+      backgroundColor: {
+        'custom-green': 'rgba(0, 255, 51, 0.388)',
+        'custom-transparent': 'rgba(255, 255, 255, 0.05)'
+      },
+
+
+      animation: {
+        typewriter: 'typewriter 2s steps(11) forwards',
+        caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
+      },
+      keyframes: {
+        typewriter: {
+          to: {
+            left: '100%',
+          },
+        },
+        blink: {
+          '0%': {
+            opacity: '0',
+          },
+          '0.1%': {
+            opacity: '1',
+          },
+          '50%': {
+            opacity: '1',
+          },
+          '50.1%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '0',
+          },
+        },
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.font-poppins-thin': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '100',
+        },
+        '.font-poppins-extralight': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '200',
+        },
+        '.font-poppins-light': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '300',
+        },
+        '.font-poppins-regular': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '400',
+        },
+        '.font-poppins-medium': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '500',
+        },
+        '.font-poppins-semibold': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '600',
+        },
+        '.font-poppins-bold': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '700',
+        },
+        '.font-poppins-extrabold': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '800',
+        },
+        '.font-poppins-black': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '900',
+        },
+        '.font-poppins-thin-italic': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '100',
+          fontStyle: 'italic',
+        },
+        '.font-poppins-extralight-italic': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '200',
+          fontStyle: 'italic',
+        },
+        '.font-poppins-light-italic': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '300',
+          fontStyle: 'italic',
+        },
+        '.font-poppins-regular-italic': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '400',
+          fontStyle: 'italic',
+        },
+        '.font-poppins-medium-italic': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '500',
+          fontStyle: 'italic',
+        },
+        '.font-poppins-semibold-italic': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '600',
+          fontStyle: 'italic',
+        },
+        '.font-poppins-bold-italic': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '700',
+          fontStyle: 'italic',
+        },
+        '.font-poppins-extrabold-italic': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '800',
+          fontStyle: 'italic',
+        },
+        '.font-poppins-black-italic': {
+          fontFamily: 'Poppins, sans-serif',
+          fontWeight: '900',
+          fontStyle: 'italic',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+
+  ],
+};
+
+
+
+
