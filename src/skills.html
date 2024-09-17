@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
+    <title>Skills</title>
     <link href="../src/output.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!-- <style>
+    <style>
         .card {
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -16,10 +17,13 @@
             transform: scale(1.05);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
-    </style> -->
+        .skill-icon {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 px-5">
-
+<body class="bg-gray-100 pb-10 px-5">
     <nav id="myNav">
         <p class="ml-4"><'Muhammad Taha/'></p> 
         <div class="mr-4 text-base">  
@@ -29,31 +33,113 @@
         </div>
     </nav>
 
-    <div class="container mx-auto max-w-4xl pt-6">
+    <div class="container mx-auto max-w-5xl">
         <h1 class="text-3xl font-bold text-center mb-10">Skills</h1>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Muhammad-Taha-Qader&layout=compact" alt="Top Languages">
 
-        <!-- Education Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- IT University Lahore Card -->
-            <a href="https://example.com" class="block p-6 rounded-lg card bg-gradient-to-r from-blue-400 to-blue-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <i class="text-2xl fas fa-university"></i>
-                    <h2 class="pl-2 text-2xl font-bold">Information Technology University Lahore</h2>
-                </div>
-                <p>Bachelor of Science in Computer Science</p>
-                <p>Sep. 2021 – Present</p>
-                <p>CGPA: 3.57/4.0</p>
-            </a>
+        <!-- Skills Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- HTML Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-600 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">HTML</h3>
+            </div>
 
-            <!-- GCU Lahore Card -->
-            <a href="https://example.com" class="block p-6 rounded-lg card bg-gradient-to-r from-green-400 to-green-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <i class="text-2xl fas fa-school"></i>
-                    <h2 class="pl-2 text-2xl font-bold">Government College University (GCU) Lahore</h2>
-                </div>
-                <p>FSc Pre-Engineering</p>
-                <p>Sep. 2019 – Jun. 2021</p>
-            </a>
+            <!-- CSS Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">CSS</h3>
+            </div>
+
+            <!-- JavaScript Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-yellow-500 to-yellow-700 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">JavaScript</h3>
+            </div>
+
+            <!-- Tailwind CSS Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-teal-500 to-violet-600 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" alt="Tailwind CSS" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+            </div>
+
+            <!-- React Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-700 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">React</h3>
+            </div>
+
+            <!-- TypeScript Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/typescript.png" alt="TypeScript" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">TypeScript</h3>
+            </div>
+
+            <!-- C++ Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-purple-400 to-purple-600 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">C++</h3>
+            </div>
+
+            <!-- C# Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-purple-600 to-purple-800 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt="C#" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">C#</h3>
+            </div>
+
+            <!-- Unity Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-black to-gray-800 text-white text-center">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/unity.png" alt="Unity" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Unity</h3>
+            </div>
+
+            <!-- Ruby Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-red-500 to-red-700 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/ruby-programming-language.png" alt="Ruby" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Ruby</h3>
+            </div>
+
+            <!-- Technical Management -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-600 text-white text-center">
+                <img src="https://img.icons8.com/fluency/48/000000/project-management.png" alt="Technical Management" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Technical Management</h3>
+            </div>
+
+            <!-- Work Funnels -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-pink-400 to-pink-600 text-white text-center">
+                <img src="../img/funnel.png" alt="Work Funnels" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Work Funnels</h3>
+            </div>
+
+            <!-- Course Engineering -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-green-400 to-green-600 text-white text-center">
+                <img src="../img/online-education.png" alt="Course Engineering" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Course Engineering</h3>
+            </div>
+
+            <!-- Premiere Pro -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro.png" alt="Premiere Pro" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Premiere Pro</h3>
+            </div>
+
+            <!-- WordPress -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/wordpress.png" alt="WordPress" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">WordPress</h3>
+            </div>
+
+            <!-- GitHub Skill -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white text-center">
+                <img src="https://img.icons8.com/material-outlined/48/000000/github.png" alt="GitHub" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">GitHub</h3>
+            </div>
+
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-green-400 to-green-600 text-white text-center">
+                <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" class="skill-icon mx-auto mb-4">
+                <h3 class="text-xl font-semibold">Python</h3>
+            </div>
+            
         </div>
     </div>
 </body>
