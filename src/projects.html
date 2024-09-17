@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
+    <title>Projects</title>
     <link href="../src/output.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!-- <style>
+    <style>
         .card {
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .card:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
-    </style> -->
-</head>
-<body class="bg-gray-100 px-5">
 
+        .tech-stack {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .card:hover .tech-stack {
+            opacity: 1;
+        }
+
+        .icon {
+            transition: color 0.3s ease-in-out;
+        }
+
+        .icon:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 px-5">
     <nav id="myNav">
         <p class="ml-4"><'Muhammad Taha/'></p> 
         <div class="mr-4 text-base">  
@@ -32,29 +52,196 @@
     <div class="container mx-auto max-w-4xl pt-6">
         <h1 class="text-3xl font-bold text-center mb-10">Projects</h1>
 
-        <!-- Education Cards -->
+        <!-- Projects Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- IT University Lahore Card -->
-            <a href="https://example.com" class="block p-6 rounded-lg card bg-gradient-to-r from-blue-400 to-blue-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <i class="text-2xl fas fa-university"></i>
-                    <h2 class="pl-2 text-2xl font-bold">Information Technology University Lahore</h2>
+            <!-- DeltaLabs Intern Project -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-purple-400 to-indigo-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                <h2 class="text-2xl font-bold">DeltaLabs Intern Projects</h2>
+                <p>Jun. 2024 – Sept. 2024</p>
+                <p>Developed several projects as an intern:</p>
+                <ul class="list-disc pl-5">
+                    <li><a href="https://github.com/Muhammad-Taha-Qader/Dashboard-App" class="underline hover:text-yellow-300">Next Dashboard (Next.js)</a></li>
+                    <li><a href="https://github.com/Muhammad-Taha-Qader/Expense-Tracker" class="underline hover:text-yellow-300">Expense-Tracker (React)</a></li>
+                    <li><a href="https://github.com/Muhammad-Taha-Qader/Weather-App" class="underline hover:text-yellow-300">Weather App (React)</a></li>
+                    <li><a href="https://github.com/Muhammad-Taha-Qader/ToDo-Notes" class="underline hover:text-yellow-300">ToDo Notes (TypeScript)</a></li>
+                    <li><a href="https://github.com/Muhammad-Taha-Qader/TicTacToe-React" class="underline hover:text-yellow-300">TicTacToe (React)</a></li>
+                </ul>
+                <p class="mt-4 font-semibold mb-2">Tech Stack</p>
+                <div class="tech-stack">
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">HTML</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">CSS</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">JavaScript</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">React</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">Next.js</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">PostgreSQL</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">Ruby on Rails</span>
                 </div>
-                <p>Bachelor of Science in Computer Science</p>
-                <p>Sep. 2021 – Present</p>
-                <p>CGPA: 3.57/4.0</p>
-            </a>
+            </div>
 
-            <!-- GCU Lahore Card -->
-            <a href="https://example.com" class="block p-6 rounded-lg card bg-gradient-to-r from-green-400 to-green-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <i class="text-2xl fas fa-school"></i>
-                    <h2 class="pl-2 text-2xl font-bold">Government College University (GCU) Lahore</h2>
+            <!-- Solar-Lite Project -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-green-400 to-teal-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                <h2 class="text-2xl font-bold">Solar-Lite</h2>
+                <p>Mar. 2024 – Present</p>
+                <p>Team Lead for a project to provide dynamic calculations for green energy solutions and establish a multi-vendor marketplace.</p>
+                <p class="mt-4 font-semibold mb-2">Tech Stack</p>
+                <div class="tech-stack">
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">MERN</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">MongoDB</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">Express.js</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">React</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">Node.js</span>
                 </div>
-                <p>FSc Pre-Engineering</p>
-                <p>Sep. 2019 – Jun. 2021</p>
-            </a>
+                <div class="mt-4">
+                    <a href="https://github.com/Muhammad-Taha-Qader/Solar-Lite" class="text-gray-100 hover:text-white icon"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>
+
+            <!-- Flutter App Project -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                <h2 class="text-2xl font-bold">Here You Grow</h2>
+                <p>Apr. 2023</p>
+                <p>Developed a Flutter app focused on providing education pathways for Pakistanis.</p>
+                <p class="mt-4 font-semibold mb-2">Tech Stack</p>
+                <div class="tech-stack">
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">Flutter</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">Dart</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">Firebase</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">NoSQL</span>
+                </div>
+                <div class="mt-4">
+                    <a href="https://github.com/Muhammad-Taha-Qader/Here-U-Grow" class="text-gray-100 hover:text-white icon"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+            </div>
+
+            <!-- Seed Programming LMS -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-red-400 to-pink-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                <h2 class="text-2xl font-bold">Seed Programming LMS</h2>
+                <p>Feb. 2023</p>
+                <p>Developed a complete LMS as a Developer and Technical Manager at Seed Programming.</p>
+                <p class="mt-4 font-semibold mb-2">Learnings</p>
+                <div class="tech-stack">
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">WordPress</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">MySQL</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">eCommerce</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">Deployment</span>
+                </div>
+                <div class="mt-4">
+                    <a href="https://www.seedprogramming.org/developer/" class="text-gray-100 hover:text-white icon"><i class="fa-solid fa-desktop fa-2x"></i></a>
+                </div>
+            </div>
+
+            <!-- 3D FPS Unity Game -->
+            <div class="card p-6 rounded-lg bg-gradient-to-r from-yellow-400 to-orange-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                <h2 class="text-2xl font-bold">3D FPS Unity Game</h2>
+                <p>Feb. 2023</p>
+                <p>Developed a PC and Android 3D FPS game using Unity and C#.</p>
+                <p class="mt-4 font-semibold mb-2">Tech Stack</p>
+                <div class="tech-stack">
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">Unity</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded text-sm">C#</span>
+                </div>
+                <div class="mt-4">
+                    <a href="https://muhammad-taha.itch.io/titan-shooter" class="text-gray-100 hover:text-white icon"><i class="fa-brands fa-unity fa-2x"></i></a>
+                </div>
+            </div>
+
+            <!-- Programming Projects -->
+             
         </div>
+
+        <div class="container mx-auto max-w-4xl pt-6">
+            <h1 class="text-3xl font-bold text-center mb-10">Programming Projects</h1>
+        
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Huge Real -->
+                <div class="card p-6 rounded-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h2 class="text-2xl font-bold">Huge Real</h2>
+                    <p>Developed in C++ using OOP and Multi-base.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://github.com/Muhammad-Taha-Qader/Huge-Real" class="flex items-center space-x-1 hover:text-blue-700 transition duration-300">
+                            <i class="fab fa-github fa-lg text-white"></i>
+                            <span>Source Code</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Text Editor -->
+                <div class="card p-6 rounded-lg bg-gradient-to-r from-green-400 to-teal-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h2 class="text-2xl font-bold">Text Editor</h2>
+                    <p>Developed using C++ and OOP principles.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://github.com/Muhammad-Taha-Qader/Text-Editor" class="flex items-center space-x-1 hover:text-green-700 transition duration-300">
+                            <i class="fab fa-github fa-lg text-white"></i>
+                            <span>Source Code</span>
+                        </a>
+                        <a href="https://github.com/Muhammad-Taha-Qader/Text-Editor/blob/main/README.md" class="flex items-center space-x-1 hover:text-green-700 transition duration-300">
+                            <i class="fas fa-info-circle fa-lg text-white"></i>
+                            <span>Details</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Shogi (Japanese Chess) -->
+                <div class="card p-6 rounded-lg bg-gradient-to-r from-purple-400 to-indigo-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h2 class="text-2xl font-bold">Shogi (Japanese Chess)</h2>
+                    <p>Developed in C++ using BGI 2010 and OOP. Full UI included.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://github.com/Muhammad-Taha-Qader/Shogi-Japanese-chess-Cpp-BGI-2010" class="flex items-center space-x-1 hover:text-purple-700 transition duration-300">
+                            <i class="fab fa-github fa-lg text-white"></i>
+                            <span>Source Code</span>
+                        </a>
+                        <a href="https://github.com/Muhammad-Taha-Qader/Shogi-Japanese-chess-Cpp-BGI-2010/blob/main/README.md" class="flex items-center space-x-1 hover:text-purple-800 transition duration-300">
+                            <i class="fas fa-info-circle fa-lg text-white"></i>
+                            <span>Details</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Chess (Command Line UI) -->
+                <div class="card p-6 rounded-lg bg-gradient-to-r from-yellow-400 to-orange-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h2 class="text-2xl font-bold">Chess (Command Line UI)</h2>
+                    <p>Implemented using C++ and Functions on Windows.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://github.com/Muhammad-Taha-Qader/Chess" class="flex items-center space-x-1 hover:text-yellow-700 transition duration-300">
+                            <i class="fab fa-github fa-lg text-white"></i>
+                            <span>Source Code</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Multiplayer Snake Game -->
+                <div class="card p-6 rounded-lg bg-gradient-to-r from-red-400 to-pink-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h2 class="text-2xl font-bold">Multiplayer Snake Game</h2>
+                    <p>Developed using C++ and Struct Functions.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://github.com/Muhammad-Taha-Qader/Multiplayer-Snake-Game" class="flex items-center space-x-1 hover:text-red-700 transition duration-300">
+                            <i class="fab fa-github fa-lg text-white"></i>
+                            <span>Source Code</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Monopoly Game with UI -->
+                <div class="card p-6 rounded-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h2 class="text-2xl font-bold">Monopoly Game with UI</h2>
+                    <p>Developed using C++ with a complete UI.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://github.com/Muhammad-Taha-Qader/Monopoly-Game-with-UI-C-" class="flex items-center space-x-1 hover:text-gray-700 transition duration-300">
+                            <i class="fab fa-github fa-lg text-white"></i>
+                            <span>Source Code</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Dijkstra, Bellman-Ford, Floyd-Warshall Algorithms -->
+                <div class="card p-6 rounded-lg bg-gradient-to-r from-teal-400 to-blue-500 text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                    <h2 class="text-2xl font-bold">Algorithm Simulations</h2>
+                    <p>Implemented Dijkstra, Bellman-Ford, and Floyd-Warshall algorithms with step-by-step simulation in C++.</p>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </body>
+
 </html>
