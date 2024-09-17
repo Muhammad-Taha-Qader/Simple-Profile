@@ -36,18 +36,32 @@
     </nav>
 
     <div class="container mx-auto max-w-5xl">
-        <h1 class="text-3xl font-bold text-center my-10">Skills</h1>
-        <div class="flex justify-between">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Muhammad-Taha-Qader&layout=compact" alt="Top Languages">
+        <header class="flex flex-col md:flex-row justify-between items-center">
+            <!-- Image for Top Languages -->
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Muhammad-Taha-Qader&layout=compact" alt="Top Languages" class="order-2 md:order-1">
+        
+            <!-- H1 - Skills -->
+            <h1 class="text-4xl font-poppins-thin text-wrap
+                       relative w-[max-content] font-mono
+                       before:absolute before:inset-0 before:animate-typewriter
+                       before:bg-gray-100
+                       after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
+                       after:bg-violet-500
+                       order-1 md:order-2 mx-auto md:mx-0 my-16 md:my-0">
+                <span class="text-indigo-900 font-poppins-extrabold">Skills</span>
+            </h1>
+        
+            <!-- Lottie Animation -->
             <lottie-player 
                 src="../img/skills.json" 
                 background="transparent"  
                 speed="1"  
                 style="width: 300px; height: 300px;" 
-                loop  
-                autoplay>
+                loop autoplay
+                class="order-3 md:order-3">
             </lottie-player>
-        </div>
+        </header>
+        
 
         <!-- Skills Grid -->
         <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -154,5 +168,13 @@
             
         </div>
     </div>
+
+    <footer class="text-gray-900 text-center pt-16 pb-4 font-poppins-light">
+        <div class="space-x-4 pb-3 ">
+            <a href="./index.html" ><button type="button" class="underline underline-offset-2 hover:text-yellow-300 transition duration-300 ease-in-out">Home</button></a>
+            <a href="./about.html" ><button type="button" class="underline underline-offset-2 hover:text-yellow-300 transition duration-300 ease-in-out">About</button></a>
+        </div>
+        <p class="font-poppins-thin text-sm">&copy; 2024 Twilight Sols. All rights reserved.</p>
+    </footer>
 </body>
 </html>
