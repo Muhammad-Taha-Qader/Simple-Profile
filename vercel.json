@@ -1,11 +1,7 @@
 {
   "builds": [
     {
-      "src": "src/index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "src/output.css",
+      "src": "src/*",
       "use": "@vercel/static"
     },
     {
@@ -17,6 +13,26 @@
     {
       "src": "/",
       "dest": "/src/index.html"
+    },
+    {
+      "src": "/about.html",
+      "dest": "/src/about.html"
+    },
+    {
+      "src": "/education.html",
+      "dest": "/src/education.html"
+    },
+    {
+      "src": "/projects.html",
+      "dest": "/src/projects.html"
+    },
+    {
+      "src": "/experience.html",
+      "dest": "/src/experience.html"
+    },
+    {
+      "src": "/skills.html",
+      "dest": "/src/skills.html"
     },
     {
       "src": "/output.css",
