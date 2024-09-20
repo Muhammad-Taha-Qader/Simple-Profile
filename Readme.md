@@ -1,5 +1,5 @@
 # Sample Personal Portfolio
-A simple portfolio i HTML +  Tailwind
+A simple portfolio in HTML +  Tailwind
 
 
 [See Portfolio](https://profile-alpha-sepia.vercel.app/)

@@ -15,6 +15,10 @@
       "dest": "/src/index.html"
     },
     {
+      "src": "/index.html",
+      "dest": "/src/index.html"
+    },
+    {
       "src": "/about.html",
       "dest": "/src/about.html"
     },
