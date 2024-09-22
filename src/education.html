@@ -5,20 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
     <link href="../src/output.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- for lottie animation after link run : npm install lottie-web -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- <style>
-        .card {
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-    </style> -->
 </head>
 <body class="bg-gray-100 px-5">
 
@@ -54,28 +44,35 @@
         </h1>
 
         <!-- Education Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- IT University Lahore Card -->
-            <a href="https://itu.edu.pk/" class="block p-6 rounded-lg card bg-gradient-to-r from-blue-400 to-blue-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <i class="text-2xl fas fa-university"></i>
-                    <h2 class="pl-2 text-2xl font-bold">Information Technology University Lahore</h2>
-                </div>
-                <p>Bachelor of Science in Computer Science</p>
-                <p>Sep. 2021 – Present</p>
-                <p>CGPA: 3.57/4.0</p>
-            </a>
-
-            <!-- GCU Lahore Card -->
-            <a href="https://www.gcu.edu.pk/" class="block p-6 rounded-lg card bg-gradient-to-r from-green-400 to-green-600 text-white hover:shadow-2xl transition duration-300 ease-in-out">
-                <div class="flex items-center mb-4">
-                    <i class="text-2xl fas fa-school"></i>
-                    <h2 class="pl-2 text-2xl font-bold">Government College University (GCU) Lahore</h2>
-                </div>
-                <p>FSc Pre-Engineering</p>
-                <p>Sep. 2019 – Jun. 2021</p>
-            </a>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="education-cards">
+            <!-- Education cards will be dynamically inserted here -->
         </div>
     </div>
+
+    <script>
+        // JavaScript to load education data from the JSON file
+        fetch('./education.json')
+            .then(response => response.json())
+            .then(data => {
+                const educationContainer = document.getElementById('education-cards');
+                educationContainer.innerHTML = ''; // Clear any existing content
+
+                data.education.forEach(edu => {
+                    const eduCard = `
+                        <a href="${edu.url}" class="block p-6 rounded-lg card bg-gradient-to-r ${edu.gradient} text-white hover:shadow-2xl transition duration-300 ease-in-out">
+                            <div class="flex items-center mb-4">
+                                <i class="text-2xl fas ${edu.icon}"></i>
+                                <h2 class="pl-2 text-2xl font-bold">${edu.name}</h2>
+                            </div>
+                            <p>${edu.degree}</p>
+                            <p>${edu.duration}</p>
+                        </a>
+                    `;
+                    educationContainer.innerHTML += eduCard;
+                });
+            })
+            .catch(error => console.error('Error fetching education data:', error));
+    </script>
+
 </body>
 </html>

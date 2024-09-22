@@ -1,0 +1,21 @@
+{
+    "education": [
+      {
+        "name": "Information Technology University Lahore",
+        "degree": "Bachelor of Science in Computer Science",
+        "duration": "Sep. 2021 – Present",
+        "url": "https://itu.edu.pk/",
+        "icon": "fa-university",
+        "gradient": "from-blue-400 to-blue-600"
+      },
+      {
+        "name": "Government College University (GCU) Lahore",
+        "degree": "FSc Pre-Engineering",
+        "duration": "Sep. 2019 – Jun. 2021",
+        "url": "https://www.gcu.edu.pk/",
+        "icon": "fa-school",
+        "gradient": "from-green-400 to-green-600"
+      }
+    ]
+  }
+  

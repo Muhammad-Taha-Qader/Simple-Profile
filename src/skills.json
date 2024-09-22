@@ -1,0 +1,100 @@
+{
+    "skills": [
+      {
+        "name": "Technical Management",
+        "image": "https://img.icons8.com/fluency/48/000000/project-management.png",
+        "description": "Managing technical projects and teams effectively."
+      },
+      {
+        "name": "Work Funnels",
+        "image": "../img/funnel.png",
+        "description": "Designing workflows and funnels to streamline operations."
+      },
+      {
+        "name": "Course Engineering",
+        "image": "../img/online-education.png",
+        "description": "Engineering and designing educational courses."
+      },
+      {
+        "name": "C++",
+        "image": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png",
+        "description": "Proficient in C++ programming language."
+      },
+      {
+        "name": "HTML",
+        "image": "https://img.icons8.com/color/48/000000/html-5.png",
+        "description": "Markup language for web development."
+      },
+      {
+        "name": "CSS",
+        "image": "https://img.icons8.com/color/48/000000/css3.png",
+        "description": "Styling web pages with cascading stylesheets."
+      },
+      {
+        "name": "JavaScript",
+        "image": "https://img.icons8.com/color/48/000000/javascript.png",
+        "description": "Dynamic programming language for web development."
+      },
+      {
+        "name": "Tailwind CSS",
+        "image": "https://img.icons8.com/color/48/000000/tailwindcss.png",
+        "description": "Utility-first CSS framework for building custom designs."
+      },
+      {
+        "name": "React",
+        "image": "https://img.icons8.com/color/48/000000/react-native.png",
+        "description": "JavaScript library for building user interfaces."
+      },
+      {
+        "name": "TypeScript",
+        "image": "https://img.icons8.com/color/48/000000/typescript.png",
+        "description": "Typed superset of JavaScript that compiles to plain JavaScript."
+      },
+      {
+        "name": "Ruby",
+        "image": "https://img.icons8.com/color/48/000000/ruby-programming-language.png",
+        "description": "Dynamic, object-oriented programming language."
+      },
+      {
+        "name": "Next.js",
+        "image": "https://img.icons8.com/color/48/000000/nextjs.png",
+        "description": "React framework for server-side rendering and static web pages."
+      },
+      {
+        "name": "PostgreSQL",
+        "image": "../img/Postgresql.png",
+        "description": "Powerful, open-source object-relational database system."
+      },
+      {
+        "name": "C#",
+        "image": "https://img.icons8.com/color/48/000000/c-sharp-logo.png",
+        "description": "Programming language for developing applications."
+      },
+      {
+        "name": "Unity",
+        "image": "https://img.icons8.com/ios-filled/50/ffffff/unity.png",
+        "description": "Cross-platform game engine."
+      },
+      {
+        "name": "Python",
+        "image": "https://img.icons8.com/color/48/000000/python.png",
+        "description": "High-level programming language for general-purpose programming."
+      },
+      {
+        "name": "Premiere Pro",
+        "image": "https://img.icons8.com/color/48/000000/adobe-premiere-pro.png",
+        "description": "Video editing software developed by Adobe."
+      },
+      {
+        "name": "WordPress",
+        "image": "https://img.icons8.com/color/48/000000/wordpress.png",
+        "description": "Content management system for building websites."
+      },
+      {
+        "name": "GitHub",
+        "image": "https://img.icons8.com/material-outlined/48/000000/github.png",
+        "description": "Version control and collaboration platform for developers."
+      }
+    ]
+  }
+  
