@@ -3,97 +3,154 @@
       {
         "name": "Technical Management",
         "image": "https://img.icons8.com/fluency/48/000000/project-management.png",
-        "description": "Managing technical projects and teams effectively."
+        "gradient": {
+          "from": "indigo-400",
+          "to": "indigo-600"
+        }
       },
       {
         "name": "Work Funnels",
         "image": "../img/funnel.png",
-        "description": "Designing workflows and funnels to streamline operations."
+        "gradient": {
+          "from": "pink-400",
+          "to": "pink-600"
+        }
       },
       {
         "name": "Course Engineering",
         "image": "../img/online-education.png",
-        "description": "Engineering and designing educational courses."
+        "gradient": {
+          "from": "green-400",
+          "to": "green-600"
+        }
       },
       {
         "name": "C++",
         "image": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png",
-        "description": "Proficient in C++ programming language."
+        "gradient": {
+          "from": "purple-400",
+          "to": "purple-600"
+        }
       },
       {
         "name": "HTML",
         "image": "https://img.icons8.com/color/48/000000/html-5.png",
-        "description": "Markup language for web development."
+        "gradient": {
+          "from": "yellow-400",
+          "to": "yellow-600"
+        }
       },
       {
         "name": "CSS",
         "image": "https://img.icons8.com/color/48/000000/css3.png",
-        "description": "Styling web pages with cascading stylesheets."
+        "gradient": {
+          "from": "blue-400",
+          "to": "blue-600"
+        }
       },
       {
         "name": "JavaScript",
         "image": "https://img.icons8.com/color/48/000000/javascript.png",
-        "description": "Dynamic programming language for web development."
+        "gradient": {
+          "from": "yellow-500",
+          "to": "yellow-700"
+        }
       },
       {
         "name": "Tailwind CSS",
         "image": "https://img.icons8.com/color/48/000000/tailwindcss.png",
-        "description": "Utility-first CSS framework for building custom designs."
+        "gradient": {
+          "from": "teal-500",
+          "to": "violet-600"
+        }
       },
       {
         "name": "React",
         "image": "https://img.icons8.com/color/48/000000/react-native.png",
-        "description": "JavaScript library for building user interfaces."
+        "gradient": {
+          "from": "cyan-500",
+          "to": "cyan-700"
+        }
       },
       {
         "name": "TypeScript",
         "image": "https://img.icons8.com/color/48/000000/typescript.png",
-        "description": "Typed superset of JavaScript that compiles to plain JavaScript."
+        "gradient": {
+          "from": "blue-500",
+          "to": "blue-700"
+        }
       },
       {
         "name": "Ruby",
         "image": "https://img.icons8.com/color/48/000000/ruby-programming-language.png",
-        "description": "Dynamic, object-oriented programming language."
+        "gradient": {
+          "from": "red-500",
+          "to": "red-700"
+        }
       },
       {
         "name": "Next.js",
         "image": "https://img.icons8.com/color/48/000000/nextjs.png",
-        "description": "React framework for server-side rendering and static web pages."
+        "gradient": {
+          "from": "gray-800",
+          "to": "black"
+        }
       },
       {
         "name": "PostgreSQL",
         "image": "../img/Postgresql.png",
-        "description": "Powerful, open-source object-relational database system."
+        "gradient": {
+          "from": "blue-500",
+          "to": "blue-700"
+        }
       },
       {
         "name": "C#",
         "image": "https://img.icons8.com/color/48/000000/c-sharp-logo.png",
-        "description": "Programming language for developing applications."
+        "gradient": {
+          "from": "purple-600",
+          "to": "purple-800"
+        }
       },
       {
         "name": "Unity",
         "image": "https://img.icons8.com/ios-filled/50/ffffff/unity.png",
-        "description": "Cross-platform game engine."
+        "gradient": {
+          "from": "black",
+          "to": "gray-800"
+        }
       },
       {
         "name": "Python",
         "image": "https://img.icons8.com/color/48/000000/python.png",
-        "description": "High-level programming language for general-purpose programming."
+        "gradient": {
+          "from": "green-400",
+          "to": "green-600"
+        }
       },
       {
         "name": "Premiere Pro",
         "image": "https://img.icons8.com/color/48/000000/adobe-premiere-pro.png",
-        "description": "Video editing software developed by Adobe."
+        "gradient": {
+          "from": "blue-600",
+          "to": "blue-800"
+        }
       },
       {
         "name": "WordPress",
         "image": "https://img.icons8.com/color/48/000000/wordpress.png",
-        "description": "Content management system for building websites."
+        "gradient": {
+          "from": "blue-500",
+          "to": "blue-700"
+        }
       },
       {
         "name": "GitHub",
         "image": "https://img.icons8.com/material-outlined/48/000000/github.png",
-        "description": "Version control and collaboration platform for developers."
+        "gradient": {
+          "from": "gray-400",
+          "to": "gray-600"
+        }
       }
     ]
   }
